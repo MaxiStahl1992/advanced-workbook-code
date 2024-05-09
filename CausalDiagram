@@ -1,0 +1,10 @@
+// Causal Diagram
+digraph {
+	C [label="Cholesterol Level"]
+	S [label=Smoking]
+	R [label="CVD Risk"]
+	C -> S
+	C -> R
+	S -> R
+	S -> C [constraint=false]
+}
